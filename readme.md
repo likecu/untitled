@@ -1,4 +1,4 @@
-https://blog.csdn.net/weixin_44018338/category_9024096.html
+https://blog.csdn.net/yamaxifeng_132/category_6687061.html
 
 同一个类的对象使用不同的内存段，但静态成员共享相同的内存空间
 
