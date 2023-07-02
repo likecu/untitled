@@ -33,6 +33,13 @@ public class BasicStudy {
         int[] ints = new int[]{1, 2, 3, 4, 5};
         System.out.println(ints.length);
 
+        int x = 6;
+        int t1 = ++x + x++;
+        System.out.println("help  " + t1 + "  " + x);
+
+        x = 6;
+        t1 = x++ + x++;
+        System.out.println("help  " + t1 + "  " + x);
     }
 
     class Super {

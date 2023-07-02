@@ -60,6 +60,18 @@ E. public abstract class InnerOne { public abstract double methoda(); }
 
 修饰接口可以是public和默认
 
+````java
+    int x = 6;
+    int t1 = ++x + x++;
+    System.out.println("help  " + t1 + "  " + x); //14  8
+
+    x = 6;
+    t1 = x++ + x++;
+    System.out.println("help  " + t1 + "  " + x); //13  8
+
+这里把x++设为使用完当前数后，再执行后面的步骤
+````
+
 
 
 
