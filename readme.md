@@ -19,3 +19,13 @@ this 和 super 不能使用在main方法中
 三目运算符中：第二个表达式和第三个表达式中如果都为基本数据类型，整个表达式的运算结果，由容量高的决定。99.9是double类型 而9是int类型，double容量高。
 
 实例方法不可直接调用超类的私有实例方法
+
+````
+for(Short i=0;i<100;i++)
+{
+s.add(i);
+s.remove(i-1);
+}
+````
+i是Short类型 i-1是int类型,其包装类为Integer，所以s.remove(i-1);不能移除Set集合中Short类型对象。
+
