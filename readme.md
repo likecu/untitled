@@ -4,7 +4,7 @@ https://blog.csdn.net/yamaxifeng_132/category_6687061.html
 
 属性可以是简单变量，也可以是一个对象
 
-抽象方法不能是stastic，静态方法不能被重写、继承、实现
+抽象方法不能是static，静态方法不能被重写、继承、实现
 
 this 和 super 不能使用在main方法中
 
@@ -20,12 +20,50 @@ this 和 super 不能使用在main方法中
 
 实例方法不可直接调用超类的私有实例方法
 
-````
+````java
 for(Short i=0;i<100;i++)
 {
-s.add(i);
-s.remove(i-1);
+    s.add(i);
+    s.remove(i-1);
 }
 ````
 i是Short类型 i-1是int类型,其包装类为Integer，所以s.remove(i-1);不能移除Set集合中Short类型对象。
+
+````java
+    //null应该小写
+    String str = NULL;
+````
+
+多线程共享相同的数据，使用synchronized实现数据同步。
+
+````java
+public class OuterClass {
+private double d1 = 1.0;
+//insert code here
+}
+
+You need to insert an inner class declaration at line2. Which two inner class declarations are valid? (Choose Two)
+A. static class InnerOne { public double methoda() {return d1;} }
+B. static class InnerOne { static double methoda() {return d1;} }
+C. private class InnerOne { public double methoda() {return d1;} }
+D. protected class InnerOne { static double methoda() {return d1;} }
+E. public abstract class InnerOne { public abstract double methoda(); }
+
+/*
+解答：CE
+
+        AB.内部类可以声明为static的，但此时就不能再使用外层封装类的非static的成员变量；
+
+        D.非static的内部类中的成员不能声明为static的，只有在顶层类或static的内部类中
+ */
+````
+
+修饰接口可以是public和默认
+
+
+
+
+
+
+
 
